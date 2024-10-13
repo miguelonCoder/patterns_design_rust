@@ -18,6 +18,10 @@ We implement a text editor loader that uses two sources: txt and csv, each forma
 * ### Abstract Factory 
 We implement two family of geographic entities: the geojson and wkt family. Each family have defined the point, linestring and polygon geometries. This program will have an abstraction to create this objects.
 
+* ### Builder
+We implement three configurations to create a UI, each configuration has own builder struct, which is called into Window implementation that work as Director object to create the components for ui.
+At the end, the final user is the main function that define the correct builder implementation, use Window to configure UI, and use Ui methods
+
 
 
 ## Project Structure:
